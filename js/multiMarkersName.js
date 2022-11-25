@@ -34,8 +34,10 @@ AFRAME.registerComponent("markers_start", {
       var textEl = document.createElement("a-image");
 
       textEl.setAttribute("id","src");
-      textEl.setAttribute("src", { value: imageURLArray[k] });
-      
+      textEl.setAttribute("src", imageURLArray[k] );
+			textEl.setAttribute("rotation", "-90 0 0");
+      textEl.setAttribute("scale","2 2 2");
+      textEl.setAttribute("gesture-handler");
       
       
       
